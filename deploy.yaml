@@ -119,7 +119,7 @@ data:
     <!DOCTYPE html>
     <html>
     <head>
-        <title>Nginx Test Page</title>
+        <title>Hello World</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -141,37 +141,15 @@ data:
                 box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
             }
             h1 {
-                font-size: 3em;
+                font-size: 4em;
                 margin-bottom: 20px;
                 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            }
-            p {
-                font-size: 1.2em;
-                margin-bottom: 30px;
-            }
-            .status {
-                background: rgba(76, 175, 80, 0.8);
-                padding: 10px 20px;
-                border-radius: 25px;
-                display: inline-block;
-                font-weight: bold;
-            }
-            .info {
-                margin-top: 30px;
-                font-size: 0.9em;
-                opacity: 0.8;
             }
         </style>
     </head>
     <body>
         <div class="container">
-            <h1>🚀 Nginx Test Page</h1>
-            <p>Welcome to your nginx deployment!</p>
-            <div class="status">✅ Running Successfully</div>
-            <div class="info">
-                <p>This page is served by nginx running in Kubernetes</p>
-                <p>Deployment: nginx-deployment | Namespace: nginx-test</p>
-            </div>
+            <h1>Hello World!</h1>
         </div>
     </body>
     </html>
