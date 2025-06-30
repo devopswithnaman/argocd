@@ -4,17 +4,12 @@ metadata:
   name: argocd-server-ingress
   namespace: argocd
   annotations:
-    konghq.com/protocols: https
     # Remove legacy annotation if you're using ingressClassName
     # kubernetes.io/ingress.class: kong
   labels:
     app.kubernetes.io/name: argocd-server
 spec:
   ingressClassName: kong
-  tls:
-  - hosts:
-    - argo-stage.parkplus.io
-    secretName: argo-stage-tls # <-- make sure this secret exists
   rules:
   - host: argo-stage.parkplus.io
     http:
